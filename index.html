@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     position: relative;
   }
 
@@ -118,11 +118,7 @@
     justify-content: center;
     box-shadow: 0 6px 24px rgba(0,155,222,0.5), 0 0 0 5px rgba(255,255,255,0.9);
     z-index: 5;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    color: var(--gp-white);
-    letter-spacing: -1px;
+    overflow: hidden;
   }
 
   .card-body {
@@ -333,7 +329,7 @@
         <ellipse cx="340" cy="160" rx="190" ry="140" fill="rgba(255,255,255,0.05)"/>
       </svg>
 
-      <div class="avatar-ring">BFK</div>
+      <div class="avatar-ring"><img src="bfk.jpeg" alt="BFK" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
     </div>
 
     <div class="card-body">
