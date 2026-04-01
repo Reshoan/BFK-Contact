@@ -93,6 +93,7 @@
     position: relative;
     height: 110px;
     background: linear-gradient(135deg, var(--gp-dark) 0%, var(--gp-deep) 40%, var(--gp-blue) 80%, var(--gp-cyan) 100%);
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
   }
 
   .header-wave {
@@ -276,6 +277,7 @@
     font-weight: 300;
     letter-spacing: 0.08em;
     color: rgba(255,255,255,0.6);
+    border-radius: 0 0 var(--card-radius) var(--card-radius);
   }
   .card-footer span { color: rgba(255,255,255,0.85); font-weight: 600; }
 
@@ -503,12 +505,11 @@ function downloadVCF() {
     'FN:Badsha Faysal Kabir',
     'N:Kabir;Badsha Faysal;;;',
     'ORG:Grameenphone Ltd.',
-    'TITLE:Head of Enterprise Support Systems Planning - Core Telco IT',
+    'TITLE:Head of ESS Planning || Agile Practitioner || Solution Architect & Design || Process Automation || IT Systems Standardization || Marathon Runner || Cyclist',
     'TEL;TYPE=CELL:+8801711083141',
-    'TEL;TYPE=WORK:+880222282990',
-    'EMAIL;TYPE=WORK:bfkabir@grameenphone.com',
-    'URL:https://www.grameenphone.com',
-    'ADR;TYPE=WORK:;;GPHouse\\, Bashundhara\\, Baridhara;Dhaka;Dhaka;1229;Bangladesh',
+    'EMAIL:mtbadsha@gmail.com',
+    'URL:https://www.ihostingbd.com',
+    'ADR;TYPE=HOME:;;Plot: 44/H\\, Apt: Ekota Momtasfa\\, Block: D\\, Road: 4\\, Bashundhara R/A;Dhaka;;1229;Bangladesh',
     'END:VCARD'
   ].join('\r\n');
 
@@ -521,7 +522,7 @@ function downloadVCF() {
 }
 
 function copyEmail() {
-  navigator.clipboard.writeText('bfkabir@grameenphone.com')
+  navigator.clipboard.writeText('mtbadsha@gmail.com')
     .then(() => showToast('✓ Email address copied'))
     .catch(() => showToast('Email: bfkabir@grameenphone.com'));
 }
